@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./node_modules/lxcommunicator/LxCommunicator~Browser.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div>
+            <img src="./assets/logo.jpg" />
+        </div>
+        <div>
+            <h3>Miniserver Dashboard</h3>
+        </div>
+        <form id="connection-form">
+            <div class="input-box-wrapper">
+                <label class="input-label">Miniserver Address</label>
+                <input placeholder="Address" required name="address" />
+            </div>
+            <div class="input-box-wrapper">
+                <label class="input-label">LightControllerV2</label>
+                <input placeholder="Controller Name" required name="controllerName" />
+            </div>
+            <button id="submit-button" class="connect-button">Connect</button>
+        </form>
+        <div class="tile-controller">
+            <div class="tile-wrapper">
+                <img class="tile-img active" src="./assets/tile.png" />
+            </div>
+        </div>
+        <div class="status"></div>
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
